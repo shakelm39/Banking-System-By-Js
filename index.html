@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Your Bank</title>
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- bootstrap css -->
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- bootstrap js -->
+</head>
+<body class="bg-info">
+	
+<!-- loign area start -->
+<div class="container fw-bold">
+	<div id="loginBox">
+	<div class="row">
+		<div class="col-lg-8 col-md-12 m-auto bg-secondary bg-gradient">
+			<h2 class="text-white text text-center p-4">Login Here</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-8 col-md-12 d-flex justify-content-center p-4 bg-light m-auto">
+			<div class="col-md-6">
+				<span id="msg"></span>
+				<form action="">
+					<label id="msg" class="text-danger"></label>
+					<div class="form-group mb-3">
+						<label for="">Account Number</label>
+						<input type="number" id="acc_no" value="129850" class="form-control" placeholder="Enter Account Number">
+					</div>
+					<div class="form-group mb-3">
+						<label for="">Password</label>
+						<input type="password" id="pass" value="123456" class="form-control" placeholder="Enter Account Password">
+					</div>
+					<div class="form-group mb-3">
+						<input type="button" id="loginBtn" class="btn btn-secondary fw-bold" value="login">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-8 col-md-12 m-auto bg-secondary bg-gradient">
+			<p class="text-white text text-center p-2">&copy;2022 Copyright || Allright Reserved By Shakel</p>
+		</div>
+	</div>
+ </div>
+ <div id="dasbord" style="display:none;" class="mt-4">
+ 	<div class="row">
+ 		<div class="col-md-12 col-sm-12 bg-primary">
+ 			<h2 class="text-white text-center p-4">Dashboard
+ 				<button id="exit" class="btn btn-danger float-end">Exit</button>
+ 			</h2>
+ 		</div>
+ 	</div>
+ 	<div class="row">
+ 		<div class="col-md-12 col-sm-12 bg-primary">
+ 			<div class="card bg-success col-md-4 m-auto text-center text-white p-4">
+ 				<div class="card-body">
+ 					<h2>Main Balance</h2>
+ 					<label for="mbalance"><span id="mbalance" class="fw-bold fs-2">500</span></label>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="row fw-bold">
+ 		<div class="col-md-12 col-sm-12 bg-primary d-flex justify-content-around p-4">
+ 			<div class="card bg-warning col-md-4 text-center text-white p-4 mt-4">
+ 				<h2>Deposit Balance <span id="depositBalance">00</span></h2>
+ 				<div class="card-body">
+ 					<input type="number" class="form-control mb-4" id="dmoney">
+ 					<button class="btn btn-success" id="dbtn">Deposit Money</button>
+ 				</div>
+ 			</div>
+ 			<div class="card bg-info col-md-4 text-center text-white p-4 mt-4">
+ 				<h2>Withdraw Balance <span id="total_withdraw">00</span></h2>
+ 				<span id="wmsg"></span>
+ 				<div class="card-body">
+ 					<input type="number" class="form-control mb-4" id="wbalance">
+ 					<span id="wmsg"></span>
+ 					<button class="btn btn-success" id="wbtn">Withdraw Money</button>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="row">
+ 		<div class="col-md-12 col-sm-12 bg-primary text-white m-auto text-center p-4">
+ 			<p>&copy;Copyright-2022 | Allright Reserved By Shakel </p>
+ 		</div>
+ 	</div>
+ </div>
+</div>
+<!-- login area end -->	  	
+
+<!-- main js file -->
+<script src="js/main.js"></script>
+<!-- main js file -->
+</body>
+</html>
